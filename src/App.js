@@ -1,14 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react'
+import FirstSection from './components/FirstSection';
+import SecondSection from './components/SecondSection';
+import Footer from './components/Footer'
+import Navbar from './components/Navbar';
+import Sidebar from './components/Sidebar';
 
 function App() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggle = () => {
+    setIsOpen(!isOpen)
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <h1>Health App</h1>
-      </header>
-    </div>
+    <>
+      <Sidebar isOpen={isOpen} toggle={toggle} />
+      <Navbar toggle={toggle} />
+      <FirstSection></FirstSection>
+      <SecondSection></SecondSection>
+      <Footer />
+    </>
   );
 }
 
