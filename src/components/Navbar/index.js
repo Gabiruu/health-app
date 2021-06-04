@@ -43,14 +43,11 @@ const Navbar = ({ toggle }) => {
                         <NavMenu>
                             <NavItem>
                                 <NavLinks
-                                    /*
                                     to='sobre'
                                     smooth={true}
                                     duration={500}
                                     spy={true}
                                     osffset={-80}
-                                    */
-                                    onClick={toggleHome}
                                 >Sobre</NavLinks>
                             </NavItem>
                             <NavItem>
@@ -64,21 +61,21 @@ const Navbar = ({ toggle }) => {
                             </NavItem>
                             <NavItem>
                                 <NavLinks
-                                    to='services'
+                                    to='plano'
+                                    smooth={true}
+                                    duration={500}
+                                    spy={true}
+                                    osffset={-80}
+                                >Plano familiar</NavLinks>
+                            </NavItem>
+                            <NavItem>
+                                <NavLinks
+                                    to='download'
                                     smooth={true}
                                     duration={500}
                                     spy={true}
                                     osffset={-80}
                                 >Download</NavLinks>
-                            </NavItem>
-                            <NavItem>
-                                <NavLinks
-                                    to='signup'
-                                    smooth={true}
-                                    duration={500}
-                                    spy={true}
-                                    osffset={-80}
-                                >Parceiros</NavLinks>
                             </NavItem>
                         </NavMenu>
                     </NavbarContainer>

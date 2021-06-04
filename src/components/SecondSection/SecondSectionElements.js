@@ -1,108 +1,67 @@
 import styled from 'styled-components'
 
-export const SecondSectionContainer = styled.div`
 
-background: #48CAE4;
-color:#fff;
-/*
-height: 800px;
-display: flex;
-position: relative;
-justify-content:center;
-align-items: center;
-padding: 0 30px;
-position: relative;
-z-index:1;
-*/
+export const SecondSectionContainer = styled.div`
+    background: #2e4e65;
+    color:#fff;
+    height: 700px;
+    padding-top: 10px;
+    /*
+
+    display: flex;
+    position: relative;
+    justify-content:center;
+    align-items: center;
+    padding: 0 30px;
+    position: relative;
+    z-index:1;
+    */
 @media screen and (max-width:768px){
         padding:100px 0;
     }
 `
 
-
-export const InfoWrapper = styled.div`
-    display:grid;
-    z-index:1;
-    height:860px;
-    width:100%;
-    max-width:1100px;
-    margin-right: auto;
-    margin-left: auto;
-    padding:0 24px;
-    justify-content: center;
- `
-
-export const InfoRow = styled.div`
-    display:grid;
-    grid-auto-columns: minmax(auto, 1fr);
-    align-items:center;
-    grid-template-areas: 'col2 col1';
-
-    @media screen and (max-width: 768px){
-        grid-template-areas: 'col1' 'col2';
-    }
- `
-
-
-export const Column1 = styled.div`
-    margin-bottom: 15px;
-    padding:0 15px;
-    grid-area: col1;
+export const SecondSectionHeader = styled.div`
+    text-align: center;
+    font-size: 35px;
+    margin-block-start: 0;
+    margin-block-end: 0;
 `
 
-export const Column2 = styled.div`
-    margin-bottom: 15px;
-    padding:0 15px;
-    grid-area: col2;
+export const HeaderTitle = styled.h1`
+    padding: 20px 0;
 `
+/* Container for flexboxes */
 
-export const TextWrapper = styled.div`
-    max-width:540px;
-    padding-top:0;
-    padding-bottom:60px;
-`
-export const TopLine = styled.p`
-    color:#03045e;
-    font-size:16px;
-    font-weight:700;
-    letter-spacing:1.4px;
-    text-transform: uppercase;
-    margin-bottom:16px;
-`
-
-export const Heading = styled.h1`
-    margin-bottom:24px;
-    font-size:48px;
-    line-height:1.1;
-    font-weight:600;
-    color: #f7f8fa;
-
-    @media screen and (max-width: 480px){
-        font-size:32px;
+export const SecondSectionRow = styled.div`
+    display: flex;
+  @media (max-width: 600px) {
+      flex-direction: column;
     }
 `
 
-export const SubTitle = styled.p`
-    max-width:440px;
-    margin-bottom:35px;
-    font-size:18px;
-    line-height:24px;
-    color: ${({ darkText }) => (darkText ? '#010606' : '#fff')};
+/* Create three equal columns that sits next to each other */
+export const SecondSectionColumn = styled.div`
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    padding: 50px;
 `
 
-export const BtnWrap = styled.div`
-    display:flex;
-    justify-content:flex-start;
-`
-
-export const ImgWrap = styled.div`
-    max-width:550px;
-    height: 100%;
+export const SecondSectionDoubleColumn = styled.div`
+    -webkit-flex: 2;
+    -ms-flex: 2;
+    flex: 2;
+    padding: 0 50px;
 `
 
 export const Img = styled.img`
-    width:70%;
-    margin: 0 0 10px 0;
-    padding-right:0;
-    float: right;
+  width:100%;
+`
+
+export const AboutTitle = styled.h3`
+    font-size: 40px;
+`
+export const AboutText = styled.p`
+ font-size: 20px;
 `

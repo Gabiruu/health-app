@@ -1,44 +1,39 @@
 import React from 'react'
-import img from '../../images/cel-003.png'
-import { SecondSectionContainer } from './SecondSectionElements'
+import img from '../../images/about-img2.jpg'
+
 import {
-    InfoWrapper,
-    InfoRow,
-    Column1,
-    TextWrapper,
-    TopLine,
-    Heading,
-    SubTitle,
-    BtnWrap,
-    Column2,
-    ImgWrap,
-    Img
-} from '../SecondSection/SecondSectionElements'
+    SecondSectionContainer,
+    SecondSectionHeader,
+    SecondSectionColumn,
+    SecondSectionDoubleColumn,
+    SecondSectionRow,
+    Img,
+    AboutText,
+    AboutTitle,
+    HeaderTitle
+} from './SecondSectionElements'
 
 const SecondSection = () => {
     return (
         (
             <>
-                <SecondSectionContainer id='beneficios'>
-                    <InfoWrapper>
-                        <InfoRow  >
-                            <Column1>
-                                <TextWrapper>
-                                    <TopLine> Com você a todo momento</TopLine>
-                                    <Heading> Disponível para todos os aparelhos</Heading>
-                                    <SubTitle>A partir do plano básico você companha no celular, tablet, Smartwatch em tempo real suas análises de saúde</SubTitle>
-                                    <BtnWrap>
+                <SecondSectionContainer id='sobre'>
+                    <SecondSectionHeader>
+                        <HeaderTitle>Sobre</HeaderTitle>
+                    </SecondSectionHeader>
 
-                                    </BtnWrap>
-                                </TextWrapper>
-                            </Column1>
-                            <Column2>
-                                <ImgWrap>
-                                    <Img src={img} />
-                                </ImgWrap>
-                            </Column2>
-                        </InfoRow>
-                    </InfoWrapper>
+                    <SecondSectionRow>
+                        <SecondSectionColumn><Img src={img} /></SecondSectionColumn>
+                        <SecondSectionDoubleColumn>
+                            <AboutTitle>O futuro da nossa saúde</AboutTitle>
+                            <AboutText>As tecnologias e os algoritmos que as nutrem estão cada vez mais inteligentes e versáteis.
+                            Nós da app health trabalhamos para que todo esse poder seja usado a favor do monitoramento da saúde de
+                            nossos clientes acumulando dados significativos, assim auxiliando em melhores tomadas de decisões
+                            médicas mais precisas
+                            </AboutText>
+                        </SecondSectionDoubleColumn>
+                    </SecondSectionRow>
+
                 </SecondSectionContainer>
             </>
         )

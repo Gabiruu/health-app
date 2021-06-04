@@ -4,6 +4,7 @@ export const FirstSectionContainer = styled.div`
     height: 800px;
     background-color: #48CAE4;
     display: flex;
+    flex-direction: column;
     position: relative;
     justify-content:center;
     align-items: center;
@@ -51,6 +52,7 @@ export const FirstSectionContent = styled.div`
     display:flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
 `
 
 export const FirstSectionH1 = styled.h1`
@@ -77,4 +79,24 @@ export const FirstSectionP = styled.p`
     @media screen and (max-width: 480px)  {
         font-size: 18px;
     }
+`
+export const FirstBtnWrapper = styled.div`
+    margin-top:32px;
+    flex-direction: column;
+    align-items: center;
+    z-index: 3;
+    position: relative;
+`
+
+
+export const StoreBtn = styled.div`
+    max-width:550px;
+    height: 100%;
+`
+
+export const Img = styled.img`
+    width:30%;
+    margin: 0 0 0px 10px;
+    padding-right:0;
+    max-height: 50px;
 `
